@@ -126,4 +126,41 @@ nav ul li {
 }
 .partners .partners-images ul img {
   width: 152px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: 60px auto;
+}
+.info p,
+.info h2 {
+  color: #212529;
+}
+.info .info-text {
+  width: 40%;
+}
+.info .info-text h2 {
+  margin-bottom: 16px;
+}
+.info .info-text p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: hsla(210, 11%, 15%, 0.5);
+}
+.info .info-image {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+}
+.info .info-image img {
+  width: 600px;
+}
+.info .info-image-second {
+  width: 60%;
+  display: flex;
+  justify-content: end;
+}
+.info .info-image-second img {
+  width: 600px;
 }/*# sourceMappingURL=style.css.map */

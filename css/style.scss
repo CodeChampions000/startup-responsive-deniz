@@ -136,3 +136,39 @@ nav {
     }
   }
 }
+.info {
+  display: flex;
+  align-items: center;
+  margin: 60px auto;
+  p,
+  h2 {
+    color: $secondary;
+  }
+  .info-text {
+    width: 40%;
+    h2 {
+      margin-bottom: 16px;
+    }
+    p {
+      margin-bottom: 16px;
+      font-size: $fontSmall;
+      color: hsla(210, 11%, 15%, 0.5);
+    }
+  }
+  .info-image {
+    width: 60%;
+    display: flex;
+    justify-content: start;
+    img {
+      width: 600px;
+    }
+  }
+  .info-image-second {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    img {
+      width: 600px;
+    }
+  }
+}
