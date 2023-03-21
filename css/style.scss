@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap");
+$primary: #74c69d;
+$secondary: #212529;
+$fontTitle: 40px;
+$fontSmall: 16px;
+$fontMid: 20px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Crimson Text", serif;
+  font-size: $fontTitle;
+}
+
+.darkBtn {
+  padding: 12px 48px;
+  font-size: $fontMid;
+  border-radius: 5px;
+  border: none;
+  background-color: $secondary;
+}
+
+.container {
+  width: 100%;
+  max-width: 1175px;
+  margin: auto;
+}
+
+header {
+  background-color: $primary;
+  padding-bottom: 80px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 0;
+
+  img {
+    width: 187px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      margin-left: 30px;
+      font-size: $fontMid;
+    }
+  }
+}
+.hero {
+  display: flex;
+  align-items: center;
+
+  .hero-text {
+    width: 40%;
+    p {
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 25px;
+    }
+    button {
+      padding: 12px 48px;
+      color: $secondary;
+      font-size: $fontMid;
+      border-radius: 5px;
+      border: none;
+    }
+    div {
+      width: 80%;
+    }
+    h4 {
+      letter-spacing: 5px;
+      margin-bottom: 15px;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+  }
+  .hero-image {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    img {
+      width: 644px;
+    }
+  }
+}

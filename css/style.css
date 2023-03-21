@@ -1,1 +1,92 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Crimson Text", serif;
+  font-size: 40px;
+}
+
+.darkBtn {
+  padding: 12px 48px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #212529;
+}
+
+.container {
+  width: 100%;
+  max-width: 1175px;
+  margin: auto;
+}
+
+header {
+  background-color: #74c69d;
+  padding-bottom: 80px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 0;
+}
+nav img {
+  width: 187px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+.hero .hero-text {
+  width: 40%;
+}
+.hero .hero-text p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 25px;
+}
+.hero .hero-text button {
+  padding: 12px 48px;
+  color: #212529;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.hero .hero-text div {
+  width: 80%;
+}
+.hero .hero-text h4 {
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+.hero .hero-text h2 {
+  margin-bottom: 15px;
+}
+.hero .hero-image {
+  width: 60%;
+  display: flex;
+  justify-content: end;
+}
+.hero .hero-image img {
+  width: 644px;
+}/*# sourceMappingURL=style.css.map */
