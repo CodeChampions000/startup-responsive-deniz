@@ -89,4 +89,41 @@ nav ul li {
 }
 .hero .hero-image img {
   width: 644px;
+}
+
+.partners {
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.partners h4 {
+  color: #74c69d;
+  letter-spacing: 8px;
+}
+.partners p,
+.partners h2 {
+  color: #212529;
+  margin: 16px auto;
+}
+.partners .partners-text {
+  margin-bottom: 55px;
+}
+.partners p {
+  font-size: 20px;
+}
+.partners .partners-images {
+  width: 100%;
+  margin-bottom: 55px;
+}
+.partners .partners-images ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.partners .partners-images ul img {
+  width: 152px;
 }/*# sourceMappingURL=style.css.map */

@@ -99,3 +99,40 @@ nav {
     }
   }
 }
+
+.partners {
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  h4 {
+    color: $primary;
+    letter-spacing: 8px;
+  }
+  p,
+  h2 {
+    color: $secondary;
+    margin: 16px auto;
+  }
+  .partners-text {
+    margin-bottom: 55px;
+  }
+  p {
+    font-size: $fontMid;
+  }
+  .partners-images {
+    width: 100%;
+    margin-bottom: 55px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      img {
+        width: 152px;
+      }
+    }
+  }
+}
