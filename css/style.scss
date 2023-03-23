@@ -30,19 +30,31 @@ h2 {
   border: none;
   background-color: $secondary;
 }
-
 .container {
   width: 100%;
   max-width: 1175px;
   margin: auto;
 }
 
+.hamburger {
+  display: none;
+}
+.hamburger-menu {
+  display: none;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 header {
   background-color: $primary;
   padding-bottom: 80px;
+  width: 100vw;
 }
 
 nav {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -171,4 +183,132 @@ nav {
       width: 600px;
     }
   }
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+  .card {
+    padding: 20px 40px;
+    box-shadow: 3px 4px 12px $secondary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 175px;
+      margin-bottom: 19px;
+    }
+    p {
+      color: $secondary;
+    }
+  }
+}
+footer {
+  background-color: $primary;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    li {
+      margin-left: 30px;
+      font-size: $fontMid;
+    }
+
+    img {
+      height: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+
+    img {
+      width: 35px;
+    }
+  }
+  nav {
+    ul {
+      display: none;
+    }
+  }
+  .hero {
+    flex-direction: column-reverse;
+    .hero-text {
+      width: 100%;
+    }
+    .hero-image {
+      width: 100%;
+      justify-content: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .container {
+    padding-inline: 20px;
+  }
+
+  .partners {
+    .partners-images {
+      ul {
+        flex-direction: column;
+        li {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  .info {
+    flex-direction: column-reverse;
+    .info-text {
+      width: 100%;
+    }
+    .info-image {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .info-image-second {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .info:nth-of-type(2) {
+    flex-direction: column;
+  }
+  .cards {
+    flex-direction: column;
+    .card {
+      margin-bottom: 40px;
+    }
+  }
+  footer {
+    div {
+      flex-direction: column;
+    }
+    ul {
+      margin-bottom: 20px;
+    }
+  }
+}
+html,
+body {
+  overflow-x: hidden;
 }

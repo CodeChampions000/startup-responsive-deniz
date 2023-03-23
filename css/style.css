@@ -31,12 +31,26 @@ h2 {
   margin: auto;
 }
 
+.hamburger {
+  display: none;
+}
+
+.hamburger-menu {
+  display: none;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 header {
   background-color: #74c69d;
   padding-bottom: 80px;
+  width: 100vw;
 }
 
 nav {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -163,4 +177,121 @@ nav ul li {
 }
 .info .info-image-second img {
   width: 600px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.cards .card {
+  padding: 20px 40px;
+  box-shadow: 3px 4px 12px #212529;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards .card img {
+  width: 175px;
+  margin-bottom: 19px;
+}
+.cards .card p {
+  color: #212529;
+}
+
+footer {
+  background-color: #74c69d;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+footer ul li {
+  margin-left: 30px;
+  font-size: 20px;
+}
+footer ul img {
+  height: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+  }
+  .hamburger img {
+    width: 35px;
+  }
+  nav ul {
+    display: none;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero .hero-text {
+    width: 100%;
+  }
+  .hero .hero-image {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero .hero-image img {
+    width: 100%;
+  }
+  .container {
+    padding-inline: 20px;
+  }
+  .partners .partners-images ul {
+    flex-direction: column;
+  }
+  .partners .partners-images ul li {
+    margin-bottom: 40px;
+  }
+  .info {
+    flex-direction: column-reverse;
+  }
+  .info .info-text {
+    width: 100%;
+  }
+  .info .info-image {
+    width: 100%;
+  }
+  .info .info-image img {
+    width: 100%;
+  }
+  .info .info-image-second {
+    width: 100%;
+  }
+  .info .info-image-second img {
+    width: 100%;
+  }
+  .info:nth-of-type(2) {
+    flex-direction: column;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .cards .card {
+    margin-bottom: 40px;
+  }
+  footer div {
+    flex-direction: column;
+  }
+  footer ul {
+    margin-bottom: 20px;
+  }
+}
+html,
+body {
+  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */
